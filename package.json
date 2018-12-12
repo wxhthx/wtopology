@@ -4,7 +4,7 @@
   "description": "a visualization topology library ",
   "main": "dist/index.js",
   "scripts": {
-    "pretest": "rimraf dist && mkdir dist && json2module package.json > dist/package.js && node rollup.node",
+    "pretest": "rimraf dist && mkdir dist && json2module package.json > dist/package.js && rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -26,10 +26,14 @@
     "d3": "^5.7.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "fs": "0.0.1-security",
     "json2module": "0.0.3",
     "rimraf": "^2.6.2",
     "rollup": "^0.67.4",
     "rollup-plugin-ascii": "0.0.3",
+    "rollup-plugin-babel": "^4.1.0",
     "rollup-plugin-node-resolve": "^4.0.0",
     "rollup-plugin-terser": "^3.0.0"
   }
