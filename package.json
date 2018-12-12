@@ -1,0 +1,36 @@
+{
+  "name": "wtopology",
+  "version": "0.1.0",
+  "description": "a visualization topology library ",
+  "main": "dist/index.js",
+  "scripts": {
+    "pretest": "rimraf dist && mkdir dist && json2module package.json > dist/package.js && node rollup.node",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wxhthx/wtopology.git"
+  },
+  "keywords": [
+    "visualization",
+    "d3.js",
+    "flowchart"
+  ],
+  "author": "alex.w",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wxhthx/wtopology/issues"
+  },
+  "homepage": "https://github.com/wxhthx/wtopology#readme",
+  "dependencies": {
+    "d3": "^5.7.0"
+  },
+  "devDependencies": {
+    "json2module": "0.0.3",
+    "rimraf": "^2.6.2",
+    "rollup": "^0.67.4",
+    "rollup-plugin-ascii": "0.0.3",
+    "rollup-plugin-node-resolve": "^4.0.0",
+    "rollup-plugin-terser": "^3.0.0"
+  }
+}
